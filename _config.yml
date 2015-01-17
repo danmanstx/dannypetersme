@@ -3,7 +3,7 @@ title: Danny Peters
 email: danmanstx@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Musings of a Computer Science / Computer Engineering graduate turned
-  Web Developer. Lover of Kentucky Basketball, Ruby on Rails, and Beer.
+  Web Developer. Lover of Kentucky Basketball, Ruby, and Beer.
   Looking for where the web meets the bare metal.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://dannypeters.me" # the base hostname & protocol for your site
