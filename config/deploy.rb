@@ -32,7 +32,7 @@ set :log_level, :debug
 
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
-set :default_env, { rvm_bin_path: '~/.rvm/bin' }
+# set :default_env, { path: '~/.rvm/bin:$PATH' }
 
 # Default value for keep_releases is 5
 set :keep_releases, 5
@@ -47,12 +47,11 @@ namespace :deploy do
     end
   end
 
-  after :restart, :build_public do
-    on roles(:web), in: :sequence, wait: 5 do
-      # Here we can do anything such as:
-      # within release_path do
-         execute "cd #{release_path} && jekyll build --destination public"
-      # end
+  before :restart, :build_public do
+    on roles(:app) do
+      within release_path do
+        execute '/home/rails/.rvm/gems/ruby-2.1.2/bin/jekyll',  "build --destination public"
+      end
     end
   end
 
