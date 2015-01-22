@@ -26,6 +26,13 @@ namespace :deploy do
     end
   end
 
+  desc "build pulbic folder"
+  task :build_public do
+    on roles(:app), in: :sequence, wait: 5 do
+      execute "jekyll build --destination public"
+    end
+  end
+
   after :finishing, "deploy:cleanup"
 
 end

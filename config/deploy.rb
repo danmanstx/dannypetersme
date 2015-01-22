@@ -17,7 +17,7 @@ set :scm, :git
 # set :format, :pretty
 
 # Default value for :log_level is :debug
-set :log_level, :info
+set :log_level, :debug
 
 # Default value for :pty is false
 # set :pty, true
@@ -44,6 +44,15 @@ namespace :deploy do
     on roles(:app), in: :sequence, wait: 5 do
       # Your restart mechanism here, for example:
       # execute :touch, release_path.join('tmp/restart.txt')
+    end
+  end
+
+  after :restart, :build_public do
+    on roles(:web), in: :sequence, wait: 5 do
+      # Here we can do anything such as:
+      # within release_path do
+         execute "cd #{release_path} && jekyll build --destination public"
+      # end
     end
   end
 

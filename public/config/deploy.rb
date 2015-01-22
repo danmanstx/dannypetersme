@@ -47,6 +47,15 @@ namespace :deploy do
     end
   end
 
+  after :restart, :build_public do
+    on roles(:web), in: :sequence, wait: 5 do
+      # Here we can do anything such as:
+      # within release_path do
+         execute :jekyll,  "build --destination public"
+      # end
+    end
+  end
+
   after :publishing, :restart
 
   after :restart, :clear_cache do
