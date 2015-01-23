@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Creating a Motion Sensing Light with Spark Core"
+title:  "Creating a Motion Sensing Light with a Spark Core"
 date:   2015-01-24 13:00:00
 comments: true
 categories: spark
