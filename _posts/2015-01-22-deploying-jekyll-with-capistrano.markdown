@@ -81,7 +81,7 @@ sudo apt-get install nginx
 
 simple enough right? Well, now we need to configure it. I don't believe i changed much in this file `/etc/nginx/nginx.conf`, but here it is.
 
-{% highlight nginx %}
+{% highlight nginx linenos %}
 
 user www-data;
 worker_processes 4;
@@ -132,7 +132,7 @@ However, I did have to create a site configuration file in `sites-available` usi
 
 Next, I just created a basic `server` block that looks at a directory named for my blog in the `rails` user's home directory. 
 
-{% highlight nginx %}
+{% highlight nginx linenos %}
 server {
   listen 80;
   server_name dannypeters.me www.dannypeters.me;
@@ -165,7 +165,7 @@ and then set up a `Gemfile` to monitor the gems we will be using.
 
 `~/blog $ vi Gemfile`
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 source 'https://rubygems.org'
 
 ruby '2.1.5'
@@ -188,7 +188,7 @@ Now we need to edit some of the files it created.
 <br>
 First, `Capfile`, we need to add `require 'rvm1/capistrano3'` because we are using rvm, and also uncomment some things.
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 # Load DSL and set up stages
 require 'capistrano/setup'
 
@@ -212,7 +212,7 @@ Dir.glob('lib/capistrano/tasks/*.rake').each { |r| import r }
 <br>
 Next, Our `config/production.rb` file, be sure to edit the `server` line with your settings.
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 set :stage, :production
 
 # Extended Server Syntax
@@ -251,7 +251,7 @@ Finally, We need to set up the `deploy.rb` file.
 
 The key here is this bit of code which builds your jekyll blog into the public folder so you don't need to compile and commit before each deploy. It's my `build_public` task below.
 
-{% highlight ruby%}
+{% highlight ruby linenos %}
 # config valid only for Capistrano 3.1
 # lock '3.2.1'
 
@@ -301,13 +301,13 @@ At fist I was getting the following error:
 
 So I switched from using the following command calling jekyll directly and ended up using the rvm wrapper, with help from [this stack overflow answer](http://stackoverflow.com/questions/26247926/how-to-solve-usr-bin-env-ruby-executable-hooks-no-such-file-or-directory)
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 execute :jekyll, "build --destination public"`
 {% endhighlight %}
 
 became:
 
-{% highlight ruby %}
+{% highlight ruby linenos %}
 execute '/home/rails/.rvm/gems/ruby-2.1.5/wrappers/jekyll',  "build --destination public"
 {% endhighlight %}
 
