@@ -24,6 +24,7 @@ GEM
     coffee-script-source (1.8.0)
     colorator (0.1)
     colorize (0.7.5)
+    emoji_for_jekyll (0.2.1)
     execjs (2.2.2)
     fast-stemmer (1.0.2)
     ffi (1.9.6)
@@ -94,5 +95,6 @@ PLATFORMS
 DEPENDENCIES
   capistrano-bundler
   capistrano-rvm
+  emoji_for_jekyll
   jekyll
   rvm1-capistrano3

@@ -10,5 +10,6 @@ url: "http://dannypeters.me" # the base hostname & protocol for your site
 twitter_username: danmanstx
 github_username:  danmanstx
 
+gems: ["emoji_for_jekyll"]
 # Build settings
 markdown: kramdown

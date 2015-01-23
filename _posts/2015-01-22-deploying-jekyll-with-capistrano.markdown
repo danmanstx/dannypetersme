@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Deploying Jekyll With Capistrano to a Digital Ocean Droplet"
-date:   2015-01-22 19:27:32
+title:  "Deploying Jekyll With Capistrano 3 to a Digital Ocean Droplet"
+date:   2015-01-22 19:27:00
+comments: true
 categories: jekyll capistrano nginx
 ---
 
@@ -327,4 +328,4 @@ $ cap production deploy
 
 <br>
 
-###Congratulations you are now a blogger.
+###Congratulations you are now a blogger. 🍻
