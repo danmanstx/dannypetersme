@@ -128,5 +128,7 @@ void light_off(){
 
 Quite simple and really easy to get set up once you have all the parts. Also its nice to have something home automated that actually is easier to use. Before I had the lights controlled by a button on a iOS app. While cool, this became impractical quick as it was a bigger inconvenience then this simple implementation. 
 
-I do plan to add back in the functionality to turn the light off with either a siri command as sometimes you want the lights out when you watch a movie, but I'll save that for either another blog post or an update to this one. 
+I do plan to add back in the functionality to turn the light off with either a siri command as sometimes you want the lights out when you watch a movie, but I'll save that for either another blog post or an update to this one.
+
+###Congratulations you never have to turn a light on or off again. 🍻 
 
