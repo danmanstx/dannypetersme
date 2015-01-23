@@ -6,9 +6,11 @@ comments: true
 categories: spark
 ---
 
-> A nice beginner guide to a simple [IoT](http://en.wikipedia.org/wiki/Internet_of_Things) device for controlling lights.
+> A nice beginner guide to a simple [IoT](http://en.wikipedia.org/wiki/Internet_of_Things) device for controlling lights. Below is a gif showing the optional connected led coming on do to the detected motion.
 
 ![light on]({{ site.url }}/assets/light_on.gif)
+
+
 
 #### Guide
 * [Supplies](#supplies)
@@ -53,11 +55,11 @@ Here is a list of all the things I used, hopefully you already have some of this
 
 Here is a quick sketched layout showing how I hooked up the hardward. In this picture, the 3 pin LED is suppose to represent the HC-SR501. 
 
->Note that I had to connect it to the Vin of the Spark Core because the HC-SR501 actually wants to run at 5v. 
+>Note that I had to connect HC-SR501 to the Vin of the Spark Core because the it actually wants to run at 5v. 
 
 ![hardward Diagram]({{ site.url }}/assets/sketch.png)
 
-Here is the actual layout of the electronics. 
+Here is my actual layout of the electronics. 
 
 ![Actual Layout]({{ site.url }}/assets/actual.jpg)
 
