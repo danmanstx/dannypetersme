@@ -6,7 +6,7 @@ comments: true
 categories: spark
 ---
 
-> A nice guide to a simple [IoT](http://en.wikipedia.org/wiki/Internet_of_Things) device for controlling lights. Below is a gif showing the optional connected led coming on do to the detected motion.
+> A nice guide to a simple [IoT](http://en.wikipedia.org/wiki/Internet_of_Things) device for controlling lights. Below is a gif showing the optional connected led coming on due to the detected motion.
 
 ![light on]({{ site.url }}/assets/light_on.gif)
 
