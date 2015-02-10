@@ -7,7 +7,7 @@ permalink: /resume/
 ### Job Experience
 ------------------
 
-### Web Developer at Suran Systems.  
+### Web Developer at Suran Systems  
 
 ####Febuary 2013 ----- Present
 
