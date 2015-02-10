@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Fixing a Mac's system Time"
+title:  "Fixing a Mac's System Time"
 date:   2015-02-09 13:00:00
 comments: true
 categories: mac server
