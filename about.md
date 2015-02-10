@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-meow This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+![weird time is weird]({{ site.url }}/assets/me.png)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+
+Life-time learner and tinkerer. Computer Sciencist and Engineer. Currently obsessed with Web Technologies and Internet of Things Devices. Apple enthusiast, BMW driver, and bourbon lover. Current Rails developer creating the next great thing for Church and Non-Profits at Suran System in Versailes, Kentucky. 
