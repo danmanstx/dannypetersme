@@ -27,3 +27,5 @@ here it is from our actual server
 
 ![weird time is weird]({{ site.url }}/assets/time.png)
 
+Congratulations you can set a clock. 🍻
+
