@@ -13,9 +13,10 @@ permalink: /resume/
 
   - Ruby on Rails developer.
   - Full stack experience with OS X, nginx, passenger, memcached/redis, bootstrap, jquery.
-  - Maintaning several Sinatra API apps.
+  - Created and maintaning several high-traffic Sinatra API apps.
   - In charge of interactions with our payment processor.
   - Helped upgrade legacy apps from rails 2 to rails 4.
+  - Using Rspec for our testing.
   - Experienced with agile practices and various Atlassian products. 
 
 #### Software Test Engineer at Lexmark Inc.  
