@@ -4,7 +4,6 @@ title: About
 permalink: /about/
 ---
 
-
 ![danny peters]({{ site.url }}/assets/me.jpg)
 
 

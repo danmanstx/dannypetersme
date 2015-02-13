@@ -9,7 +9,7 @@ permalink: /resume/
 
 ### Web Developer at Suran Systems  
 
-####Febuary 2013 ----- Present
+#### Febuary 2013 ----- Present
 
   - Ruby on Rails developer.
   - Full stack experience with OS X, nginx, passenger, memcached/redis, bootstrap, jquery.

@@ -23,7 +23,7 @@ Using the follow command we were able to reset the system clock for the mac from
 
 `sudo ntpdate -u time.apple.com`
 
-here it is from our actual server
+And here is a screenshot from our actual server.
 
 ![weird time is weird]({{ site.url }}/assets/time.png)
 
