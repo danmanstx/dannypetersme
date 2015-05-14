@@ -139,15 +139,14 @@ To test your function from the command line you can install the [spark-cli](http
 
 the key here is to use the function call name you defined as the first argument for `Spark.function` in `setup`.
 
-Now to make things even more interesting you can use the Do app from IFTTT. The setup here is insanely easy and very useful.
+Now to make things even more interesting you can use the [Do app from IFTTT](https://ifttt.com/products/do/button). The setup here is insanely easy and very useful.
 
-# Configure IFTTT to use the spark 
-# Use DO Spark
-# Select Spark under Channels
-# Select Create a New Recipe
-# Select Call a Function
-# Select your core and the proper function in this case `LightsOff` on "sample_core"
-# provide an unused input.
+1. Inside the App, Configure IFTTT to use the spark channel
+2. Select Spark under Channels
+3. Select Create a New Recipe
+4. Select Call a Function
+5. Select your core and the proper function in this case `LightsOff` on "sample_core"
+6. provide an unused input.
 
 now you should be able to turn the light off from your phone or anywhere you can trigger the ifttt event!
 
