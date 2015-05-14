@@ -11,13 +11,16 @@ permalink: /resume/
 
 #### Febuary 2013 ----- Present
 
-  - Ruby on Rails developer.
-  - Full stack experience with OS X, nginx, passenger, memcached/redis, bootstrap, jquery.
-  - Created and maintaning several high-traffic Sinatra API apps.
-  - In charge of interactions with our payment processor.
-  - Helped upgrade legacy apps from rails 2 to rails 4.
-  - Using Rspec for our testing.
-  - Experienced with agile practices and various Atlassian products. 
+  - Full Stack Developer, mainly using Ruby on Rails.
+- Upgraded multiple Rails 2.1 apps to Rails 3 then Rails 4 including our main app (~20k LOC).
+- Unique opportunity of using a single rails app to interface with hundreds of separate postgresql databases.
+- Rebuilt a legacy Rails app used for desktop activation for 10x performance gains. 
+- Built a high-traffic API in Sinatra used for provisioning for our mobile applications on both iOS and Android.
+- Built a calendar widget using the javascript framework fullcalendar, powered by JSON from Rails.
+- Currently leveraging both Redis and Memcached for performance.
+- Have set up both Mac and Linux servers for deployment with Nginx, Passenger or Puma.
+- Using Rspec for testing and working towards complete Test Driven Development.
+- Using Agile practices (standups, sprints, retrospectives) and Atlassian products (Jira, Confluenece).
 
 #### Software Test Engineer at Lexmark Inc.  
 
