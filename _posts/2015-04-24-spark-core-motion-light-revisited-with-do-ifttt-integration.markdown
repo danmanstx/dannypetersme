@@ -70,7 +70,7 @@ void loop(){
 
 void trigger_light_on(){
   if (!hold_light_off){
-    set_light_on("aaa");
+    set_light_on("triggered");
   }
 }
 
@@ -82,6 +82,9 @@ void light_off(){
 
 
 int set_light_on(String args){
+    if(args != "triggered"){
+        hold_light_off=false;
+    }
   can_turn_light_on = true;
   return 1;
 }
