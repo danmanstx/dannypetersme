@@ -64,7 +64,8 @@ void loop(){
   }
   current_time = millis();
   if( set_time+FIFTEEN_MIN_MILLIS < current_time ){
-    light_off();   
+    light_off();
+    hold_light_off = false;
   }
 }
 
@@ -83,7 +84,7 @@ void light_off(){
 
 int set_light_on(String args){
     if(args != "triggered"){
-        hold_light_off=false;
+        hold_light_off = false;
     }
   can_turn_light_on = true;
   return 1;
