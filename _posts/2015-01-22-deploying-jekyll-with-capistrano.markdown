@@ -25,8 +25,8 @@ To get started with the blog, we are using awesome [jekyll](http://jekyllrb.com)
 > now I really like to use [rvm](http://rvm.io) so I will assume that going forward, so if you need help setting it up locally follow that link.
 
 `gem istall jekyll`
- 
-Now to get the most basic blog up and going, you can use 
+
+Now to get the most basic blog up and going, you can use
 
 {% highlight bash %}
   $ gem install jekyll
@@ -38,13 +38,13 @@ Now to get the most basic blog up and going, you can use
 
 and boom! We are now serving the basic jekyll blog locally on port `4000`.
 
-To set up our basic `git` repo for [github](http://github.com) we can use the following commands. 
+To set up our basic `git` repo for [github](http://github.com) we can use the following commands.
 
 >be sure to change your origin to the repo you create on github
 
 {% highlight bash %}
-$ git init 
-$ git add . # add all files 
+$ git init
+$ git add . # add all files
 $ git commit -m "First Commit" # commit message
 $ git remote add origin git@github.com:danmanstx/blog.git
 $ git push -u origin master
@@ -55,7 +55,7 @@ $ git push -u origin master
 ### <a name="server">Server (Droplet) Set Up</a>
 ----------------
 
-To begin, I had a preconfigued droplet with a few rails apps aready on it and rvm [(guide)](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-ubuntu-14-04-using-rvm). In this case the droplet was the 1gb for $10/month, and this seems more than enough for running 3 rails apps and hosting this blog. 
+To begin, I had a preconfigued droplet with a few rails apps aready on it and rvm [(guide)](https://www.digitalocean.com/community/tutorials/how-to-install-ruby-on-rails-on-ubuntu-14-04-using-rvm). In this case the droplet was the 1gb for $10/month, and this seems more than enough for running 3 rails apps and hosting this blog.
 
 To get multiple users set up and going on your droplet [use this guide](https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04). Following along, my new user is named `rails` and I just run the apps straight out of folders in its home directory for convenience. However Common practice is to use something like www
 
@@ -63,11 +63,11 @@ To get multiple users set up and going on your droplet [use this guide](https://
 So to start, I created another folder for my blog as the `rails` user, and set up some needed default folders.
 
 {% highlight bash %}
-# switch to rails user if you aren't already 
+# switch to rails user if you aren't already
 $ sudo su - rails
 ~ $ mkdir blog
 ~ $ cd blog
-~/blog $ mkdir shared 
+~/blog $ mkdir shared
 ~/blog $ mkdir shared/log
 {% endhighlight %}
 
@@ -93,13 +93,13 @@ events {
 }
 
 http {
-  # Basic Setting  
+  # Basic Setting
   sendfile on;
   tcp_nopush on;
   tcp_nodelay on;
   keepalive_timeout 65;
   types_hash_max_size 2048;
-  
+
   server_names_hash_bucket_size 64;
   # server_name_in_redirect off;
 
@@ -124,13 +124,13 @@ http {
 }
 {% endhighlight %}
 
-However, I did have to create a site configuration file in `sites-available` using the following command: 
+However, I did have to create a site configuration file in `sites-available` using the following command:
 
 `sudo vi /etc/nginx/sites-available/<your_site_name>.conf`
 
 >be sure to note that you probably don't want to use `<your_site_name>`
 
-Next, I just created a basic `server` block that looks at a directory named for my blog in the `rails` user's home directory. 
+Next, I just created a basic `server` block that looks at a directory named for my blog in the `rails` user's home directory.
 
 {% highlight nginx linenos %}
 server {
@@ -183,7 +183,7 @@ Next, we need to capify our blog. Just run the following command from your blog 
 $ cap install
 {% endhighlight %}
 
-Now we need to edit some of the files it created. 
+Now we need to edit some of the files it created.
 
 <br>
 First, `Capfile`, we need to add `require 'rvm1/capistrano3'` because we are using rvm, and also uncomment some things.
@@ -295,7 +295,7 @@ end
 
 {% endhighlight %}
 
-At fist I was getting the following error: 
+At fist I was getting the following error:
 
 `remote: /usr/bin/env: ruby_executable_hooks: No such file or directory`
 
